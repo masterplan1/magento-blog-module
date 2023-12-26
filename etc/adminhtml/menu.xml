@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Igor_Blog::content_elements"
+             title="Igor Blog"
+             translate="title"
+             module="Igor_Blog"
+             sortOrder="10"
+             parent="Magento_Backend::content"
+             resource="Magento_Backend::admin"
+        />
+        <add id="Igor_Blog::post"
+             title="Posts"
+             translate="title"
+             module="Igor_Blog"
+             sortOrder="0"
+             parent="Igor_Blog::content_elements"
+             action="igor_blog/post"
+             resource="Magento_Backend::admin"
+        />
+    </menu>
+</config>
